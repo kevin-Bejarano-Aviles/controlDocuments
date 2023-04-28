@@ -1,0 +1,18 @@
+Interface Segregation Principle (ISP): Clients should not be forced to depend on interfaces they do not use. For example, you might use separate interfaces for document editing and collaboration, so that clients that only need to edit documents do not need to depend on the collaboration functionality.
+
+
+Principio de segregación de interfaces (ISP): los clientes no deben verse obligados a depender de interfaces que no utilizan. Por ejemplo, puede usar interfaces separadas para la edición y colaboración de documentos, de modo que los clientes que solo necesitan editar documentos no necesiten depender de la funcionalidad de colaboración.
+
+
+
+Te paso otro ejercicio. Este es mas complicado, pero interesante. Este no tiene fecha de entrega, pero me interesaría que lo vayas haciendo y por supuesto, investigando como hacerlo:
+
+Va en inglés así prácticas:
+
+You are tasked with building a web application that allows users to create and edit documents. The documents can have various formats such as text, PDF, or image. The application should also allow users to collaborate with other users on a document, with real-time updates.
+Your challenge is to design and implement the document management system using the S.O.L.I.D. principles. Here are some guidelines:
+Single Responsibility Principle (SRP): Each class or module should have a single responsibility, and there should be only one reason to change it. For example, you might have a Document class that is responsible for representing a document, a DocumentManager class that is responsible for managing documents, and a CollaborationManager class that is responsible for handling collaboration between users.
+Open/Closed Principle (OCP): Classes should be open for extension but closed for modification. For example, you might use an abstract Document class to define the common interface for all types of documents, and then create concrete classes such as TextDocument, PdfDocument, and ImageDocument that implement that interface.
+Liskov Substitution Principle (LSP): Subtypes should be substitutable for their base types. For example, all document types should be able to be managed by the DocumentManager class, regardless of their specific type.
+Interface Segregation Principle (ISP): Clients should not be forced to depend on interfaces they do not use. For example, you might use separate interfaces for document editing and collaboration, so that clients that only need to edit documents do not need to depend on the collaboration functionality.
+Dependency Inversion Principle (DIP): High-level modules should not depend on low-level modules; both should depend on abstractions. For example, the DocumentManager class might depend on an abstract DocumentRepository interface rather than a concrete database implementation, allowing for easier testing and future changes.
